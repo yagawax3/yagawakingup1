@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>じゃんけんぽん！</title>
+
+    <style>
+        body {
+            background-color: rgb(99, 200, 195);
+        }
+        p {
+            text-align: center;
+            font-size: 3.5em;
+            margin-top: 150px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // グー！', 'チョキ！', 'パー！'
+        let zyankens = ['グー！', 'チョキ！', 'パー！'];
+        //console.log(zyankens[0]);
+        let zyanken = Math.floor(Math.random() * zyankens.length);
+        //console.log(zyanken);
+
+        document.write('<p>じゃんけん！' + zyankens[zyanken] + '(^ ^)</p>');
+    </script>
+</body>
+</html>
